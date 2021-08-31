@@ -4,7 +4,7 @@
     <title>SecondApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 <body class="no-sidebar is-preload">
@@ -21,8 +21,13 @@
 							</ul>
 						</nav>
 				</div>
-    </dix>
-
+    </div>
+    <!-- Main -->
+				<div class="wrapper style1">
+					<div class="container">
+						<%= yield%>
+					</div>
+				</div>
     <!-- Footer -->
     <div id="footer">
       <div class="copyright">
